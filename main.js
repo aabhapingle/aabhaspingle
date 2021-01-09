@@ -1,10 +1,10 @@
 const typedtextspan = document.querySelector(".typed-text");
 const cursorspan = document.querySelector(".cursor");
 
-const textarr = ["Machine Learning Enthusiast", "Web Developer", "Bharatanatyam Dancer"];
+const textarr = ["Machine Learning Enthusiast", "Web Developer", "Bharatanatyam Dancer", "Content Creator","Programmer"];
 const typingdelay = 200;
 const erasingdelay = 100;
-const newTextDelay = 2000;
+const newTextDelay = 200;
 let textarrindx  = 0;
 let charindx = 0;
 
