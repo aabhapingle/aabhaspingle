@@ -1,0 +1,209 @@
+body{
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+
+	/*i have commented this because about section was coming next to this*/
+	background-color: #023047;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.1rem;
+	height: 100vh;
+}
+
+/*navbar*/
+.navbar{
+	margin-left: 3rem;
+	background-color: #023047 !important;
+}
+.navbar .navbar-brand, .navbar .navbar-brand:hover{
+	color: #ffb703;
+	font-weight: 600;
+}
+.nav-link{
+	color: #ffb703 !important;
+}
+.nav-link:hover{
+	color: #fb8500 !important;
+}
+.navbar .navbar-nav{
+	justify-content: flex-end !important;
+}
+
+/*home page*/
+/*typing effect*/
+#home{
+	height: 100vh;
+}
+.intro{
+	color: #219ebc;
+	color: #8ecae6;
+	text-align: center;
+}
+.typed-text{
+	color: #ffb703;
+}
+.cursor{
+	display: inline-block;
+	width: 3px;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	animation: blink 1s infinite;
+}
+.cursor.typing{
+	animation: none;
+}
+@keyframes blink{
+	0% {background-color: #ccc;}
+	50% {background-color: transparent;}
+	100% {background-color: #ccc;}
+}
+
+/* photos */
+.photo-container{
+	position: relative;
+	display: inline-block;
+	margin-top: 6%;
+	color: #ffb703;
+	/*color: #219ebc;*/
+	text-align: center;
+}
+.me{
+	height: 17rem;
+	width: 17.5rem;
+	border-radius: 50%;
+	transition: all linear 0.7s;
+}
+img .hover-switch{
+	position: relative;
+	top: 0;
+	left: 0;
+	opacity: 0;  /*the opacity of the image in this class is set to 0*/
+}
+.img-cont{
+	position: relative;
+	display: inline-block;
+	height: 17.5rem;
+	overflow: hidden;
+	width: 18rem;
+}
+.img-cont:hover img{
+	opacity: 0;
+}
+.img-cont:hover img.hover-switch{
+	opacity: 1;  /*change opacity when hovered*/
+}
+h4{
+	margin: 1rem;
+}
+
+/*about page*/
+#about{
+	height: auto; /*chaning this to auto was 100vh before*/
+	color: #8ecae6;	
+	padding: 14vh; /*after you click on the navbar option, it goes directly to the container*/
+	/*therefore padding: */
+}
+h3{
+	color: #ffb703;
+	font-size: 1.1rem;
+	line-height: 2;
+	font-weight: 900;
+
+}
+h2{
+	color: #ffb703;
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+h1{
+	font-size: 1.6rem;
+}
+.top-buffer{
+	margin-top: 1rem !important;
+	border-radius: 15px !important;
+
+}
+a{
+	color: #8ecae6;
+	text-align: center;
+}
+a:hover{
+	color: #219ebc;
+}
+
+/*my work*/
+#work{
+	height: auto;
+	margin-top: 10vh;
+	padding: 10vh;
+	align-items: center;
+	justify-content: center;
+}
+.title{
+	height: 100vh;
+	color: #ffb703;
+	align-items: center;
+	justify-content: center;
+}
+.box{
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	height: 15rem;
+	width: 15rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background: linear-gradient(to right, #219ebc, #8ecae6);*/
+	color: white;
+	margin: 100px 0;
+	border-radius: 7px;
+}
+#work h1{
+	color: #8ecae6;
+}
+#work a:hover{
+	color: #fb8500 !important;
+}
+
+/*footer*/
+#contact{
+	height: auto;
+	align-items: center;
+}
+#contact h1{
+	color: #8ecae6;
+}
+.footer{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	padding: 2rem;
+	align-items: center;
+	justify-content: center;
+}
+.fa-github, .fa-instagram, .fa-linkedin-square, .fa-medium, .fa-youtube-play{
+	height: 1rem !important;
+	width: 1rem !important;
+	color: #8ecae6 !important;
+}
+media{
+	display: flex;
+	flex-direction: row;
+	height: 1rem !important;
+	width: 1rem !important;
+	color: white !important;
+	align-items: center;
+	justify-content: space-between;
+	align-content: flex-center;
+
+}
+i{
+	padding: 1.5rem;
+	font-size: 1.5rem !important;
+}
+.fa-github:hover, .fa-instagram:hover, .fa-linkedin-square:hover, .fa-medium:hover, .fa-youtube-play:hover{
+	color: #219ebc !important;
+
+}
+#contact h2{
+	padding: 1rem !important;
+}
